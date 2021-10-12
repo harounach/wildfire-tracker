@@ -1,10 +1,11 @@
-import { MapContainer } from "react-leaflet";
 import Header from "./components/Header";
+import Map from "./components/Map";
 
 function App() {
   return (
-    <div className="">
+    <div className="flex flex-col w-full h-full">
       <Header />
+      <Map />
     </div>
   );
 }
