@@ -24,7 +24,7 @@ const Map = ({ data, center, zoom }) => {
       <MapContainer
         style={{ height: "100%", width: "100%" }}
         center={[center.lat, center.lng]}
-        zoom={8}
+        zoom={zoom}
         scrollWheelZoom={true}
       >
         <TileLayer

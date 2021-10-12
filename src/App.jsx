@@ -24,7 +24,14 @@ function App() {
   return (
     <div className="flex flex-col w-full h-full">
       <Header />
-      {!loading ? <Map data={eventData} /> : <div> Loading </div>}
+      {!loading ? (
+        <Map zoom={8} data={eventData} />
+      ) : (
+        <div className="w-full h-full flex justify-center items-center text-5xl">
+          {" "}
+          Loading{" "}
+        </div>
+      )}
     </div>
   );
 }
